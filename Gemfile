@@ -5,6 +5,8 @@ ruby "3.0.0"
 
 gem "bootsnap", require: false
 gem "devise"
+gem "devise-i18n"
+gem "rails-i18n"
 gem "rails", "~> 7.0.3"
 gem "sprockets-rails"
 gem "puma", "~> 5.0"

@@ -1,0 +1,8 @@
+ru:
+  hello: 'Привет, Мир!'
+
+  views:
+    mistakes:
+      one: "%{count} ошибка"
+      few: "%{count} ошибки"
+      many: "%{count} ошибок"
