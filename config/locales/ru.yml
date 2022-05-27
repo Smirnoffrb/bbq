@@ -52,3 +52,7 @@ ru:
       long: "%d %B %Y, %H:%M"
 
   confirm_delete_event: 'Вы уверены, что хотите удалить событие?'
+
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'

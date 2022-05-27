@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
   before_action :set_event, only: %i[create destroy]
-  before_action :set_comment, only: %i[destroy]
+
+  before_action :set_comment, only: [:destroy]
 
   def create
     @new_comment = @event.comments.build(comment_params)
@@ -27,7 +28,7 @@ class CommentsController < ApplicationController
 
   private
   def set_event
-    @event - Event.find(params[:event_id])
+    @event = Event.find(params[:event_id])
   end
 
   def set_comment
@@ -38,3 +39,6 @@ class CommentsController < ApplicationController
     params.require(:comment).permit(:body, :user_name)
   end
 end
+
+
+
