@@ -4,11 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.0"
 
 gem "bootsnap", require: false
+gem "carrierwave"
 gem "devise"
 gem "devise-i18n"
 gem "font-awesome-rails"
 gem "rails-i18n"
 gem "rails", "~> 7.0.3"
+gem "rmagick"
 gem "sprockets-rails"
 gem "puma", "~> 5.0"
 gem "jsbundling-rails"
