@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   resources :subscriptions
   resources :comments
   devise_for :users
