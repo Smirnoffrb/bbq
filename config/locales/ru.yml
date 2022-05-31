@@ -16,6 +16,8 @@ ru:
 
     # Перевод названий аттрибутов моделей
     attributes:
+      comment:
+        body: "Комментарий"
       user:
         email: 'Email'
         name: 'Имя'
