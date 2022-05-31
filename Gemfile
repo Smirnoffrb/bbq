@@ -7,6 +7,9 @@ gem "bootsnap", require: false
 gem "carrierwave"
 gem "devise"
 gem "devise-i18n"
+gem 'fog-aws'
+gem "mailjet"
+gem "dotenv-rails"
 gem "font-awesome-rails"
 gem "rails-i18n"
 gem "rails", "~> 7.0.3"
