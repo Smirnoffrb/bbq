@@ -5,8 +5,6 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :subscriptions, dependent: :destroy
 
-  validates :name, presence: true, length: { maximum: 35 }
-
   # При создании нового юзера (create), перед валидацией объекта выполнить
   # метод set_name
   before_validation :set_name, on: :create
@@ -14,6 +12,8 @@ class User < ApplicationRecord
   after_commit :link_subscriptions, on: :create
 
   mount_uploader :avatar, AvatarUploader
+
+  validates :name, presence: true, length: { maximum: 35 }
 
   private
 
