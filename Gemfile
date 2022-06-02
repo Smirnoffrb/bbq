@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.0"
 
+gem 'active_storage_validations'
+gem "image_processing", ">= 1.2"
 gem "aws-sdk-s3"
 gem "bootsnap", require: false
 gem "carrierwave"
