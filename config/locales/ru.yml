@@ -6,6 +6,16 @@ ru:
       one: "%{count} ошибка"
       few: "%{count} ошибки"
       many: "%{count} ошибок"
+    buttons:
+      upload: 'Загрузить'
+      subscribe: 'Подписаться'
+      save: 'Сохранить'
+      back: 'вернуться'
+    users:
+      edit:
+        action: "Сменить пароль"
+      update:
+        action: "Редактировать профиль"
 
     # Перевод моделей
   activerecord:
@@ -58,6 +68,10 @@ ru:
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+    profile: 'Профиль'
+    log_off: 'Выйти'
+    sign_in: 'Войти'
+    register: 'Зарегистрироваться'
 
   time:
     formats:

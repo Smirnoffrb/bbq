@@ -1,11 +1,11 @@
 <div class="text-center">
   <h1><%= @user.name %></h1>
 
-  <%= image_tag user_avatar(@user), size: '300x300' %>
+  <%= image_tag user_avatar(@user), size: '150x150' %>
 
   <% if @user == current_user  %>
       <p class="mt-4">
-        <%= link_to "Редактировать профиль", edit_user_path(@user), class: 'btn btn-primary' %>
+        <%= link_to t('views.users.update.action'), edit_user_path(@user), class: 'btn btn-primary' %>
       </p>
   <% end %>
 
