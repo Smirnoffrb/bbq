@@ -7,15 +7,43 @@ ru:
       few: "%{count} ошибки"
       many: "%{count} ошибок"
     buttons:
+      delete_event: 'Удалить событие'
       upload: 'Загрузить'
       subscribe: 'Подписаться'
       save: 'Сохранить'
-      back: 'вернуться'
+      back: 'Назад'
+      return: 'вернуться'
+      send: 'Отправить'
+      delete: 'Удалить'
+      sign_in: 'Войти'
+    links:
+      change: 'Изменить'
+      create_event: 'Создать событие'
+      return: 'вернуться'
+      back: 'Назад'
+      profile: 'Профиль'
+      logout: 'Выйти'
+      login: 'Войти'
+      register: 'Зарегистрироваться'
+      password_reset: 'Изменить пароль'
+      password_forgot: 'Забыли пороль?'
+      event: 'Страница события'
+      events: 'Все события'
+      confirmation_instructions: 'Не получили инструкции по подтверждению аккаунта?'
+
     users:
       edit:
         action: "Сменить пароль"
       update:
         action: "Редактировать профиль"
+    device:
+      passwords:
+        recover_password: 'Восстановить пароль'
+      registrations:
+        new_password: 'Новый пароль'
+        password_confirm: 'Подтверждение пароля'
+        current_password: 'Текущий пароль'
+        change_password: 'Изменить пароль'
 
     # Перевод моделей
   activerecord:
@@ -28,7 +56,11 @@ ru:
     # Перевод названий аттрибутов моделей
     attributes:
       comment:
-        body: "Комментарий"
+        user_name: 'Имя пользователя'
+        body: 'Комментарий'
+      subscription:
+        user_name: 'Имя пользователя'
+        user_email: 'Email'
       user:
         email: 'Email'
         name: 'Имя'
@@ -72,6 +104,7 @@ ru:
     log_off: 'Выйти'
     sign_in: 'Войти'
     register: 'Зарегистрироваться'
+    remember_me: 'Запомнить меня'
 
   time:
     formats:
