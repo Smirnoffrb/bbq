@@ -12,7 +12,7 @@
     <% if current_user_can_edit?(comment) %>
       <%= button_to '', event_comment_path(comment.event, comment), method: :delete,
                     form: { style: 'display:inline-block;', data: { turbo_confirm: t('.destroy_confirm') } },
-                    title: 'Удалить комментарий', class: 'bi bi-trash' %>
+                    title: t('.destroy_title'), class: 'bi bi-trash' %>
     <% end %>
   </span>
 </div>

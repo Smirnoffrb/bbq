@@ -1,5 +1,10 @@
 ru:
   hello: 'Привет, Мир!'
+  no_less: 'Не менее'
+  symbols: 'символов'
+  needed_for_changes: 'необходим для подтверждения изменений'
+  minimum: 'минимум'
+  characters: 'символов'
 
   views:
     mistakes:
@@ -30,12 +35,29 @@ ru:
       event: 'Страница события'
       events: 'Все события'
       confirmation_instructions: 'Не получили инструкции по подтверждению аккаунта?'
+    forgot:
+      title: 'Вы забыли свой пароль?'
 
     users:
       edit:
-        action: "Сменить пароль"
+        action: 'Сменить пароль'
       update:
-        action: "Редактировать профиль"
+        action: 'Редактировать профиль'
+        profile: 'Редактирование профиля'
+      show:
+        organized: 'Организовал:'
+        no_events: 'Пользователь пока не организовал ни одного события'
+    events:
+      edit:
+        title: 'Редактирование события'
+      list:
+        title: 'События'
+      new:
+        title: 'Создание события'
+    subscriptions:
+      calling: 'Зовет:'
+      will_go: 'Пойдут:'
+      i_will_go: 'Я пойду:'
     device:
       passwords:
         recover_password: 'Восстановить пароль'
@@ -44,6 +66,18 @@ ru:
         password_confirm: 'Подтверждение пароля'
         current_password: 'Текущий пароль'
         change_password: 'Изменить пароль'
+        change_password_title: 'Смена пароля'
+        delete_account: 'Удалить аккаунт'
+        registration: 'Регистрация'
+      sessions:
+        entry: 'Вход'
+        email: 'Адрес почты'
+        password: 'Пароль'
+      shared:
+        in_your_form: 'В вашей форме'
+    photos:
+      add: 'Добавил'
+    or: 'или'
 
     # Перевод моделей
   activerecord:
@@ -113,14 +147,17 @@ ru:
       long: "%d %B %Y, %H:%M"
 
   confirm_delete_event: 'Вы уверены, что хотите удалить событие?'
+  confirm_delete_account: 'Вы уверены? Данные аккаунта будут утрачены безвозвратно!'
 
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'
+      destroy_title: 'Удалить комментарий'
 
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      delete_sub: 'Удалить подписку'
 
   event_mailer:
     comment:

@@ -1,5 +1,5 @@
 <div class="event-photo mt-3">
   <%= link_to image_tag(photo.photo, class: 'img-fluid mb-2', style: "width:150px; height:150px"), photo.photo %>
 
-  Добавил <%= render partial: 'users/user', object: photo.user %>
+  <%= t('views.photos.add')%> <%= render partial: 'users/user', object: photo.user %>
 </div>

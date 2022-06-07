@@ -1,7 +1,7 @@
 <% if resource.errors.any? %>
   <div class="alert alert-danger alert-dismissible fade show" role="alert">
     <div id="error_explanation">
-      <h3>В вашей форме <%= t("views.mistakes", count: resource.errors.count) %>:</h3>
+      <h3><%= t('views.device.shared.in_your_form')%> <%= t("views.mistakes", count: resource.errors.count) %>:</h3>
       <ul>
         <% resource.errors.full_messages.each do |message| %>
           <li><%= message %></li>

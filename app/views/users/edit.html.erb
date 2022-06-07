@@ -1,12 +1,10 @@
-<h1>Редактирование профиля</h1>
+<h1><%= t('views.users.update.profile') %></h1>
 
 <div class="row">
   <div class="col-md-6 buffer-top">
     <%= render 'form', user: @user %>
 
     <p class="buffer-top">
-      <%# Ссылка на смену пароля текущего залогиненного юзера (этот путь %>
-      <%# генерит девайз) %>
       <%= link_to t('views.users.edit.action'), edit_user_registration_path %>
     </p>
   </div>

@@ -1,14 +1,13 @@
-<h2>Смена пароля</h2>
+<h2><%= t('views.device.registrations.change_password_title') %></h2>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put },
                data: { turbo: false }) do |f| %>
-
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="col-md-4 mt-4">
       <%= f.label :password, t('views.device.registrations.new_password'), class: "fw-bold" %>
       <% if @minimum_password_length %>
-        <em>(Не менее <%= @minimum_password_length %> символов)</em>
+        <em>(<%= t('no_less')%> <%= @minimum_password_length %> <%= t('symbols') %>)</em>
       <% end %>
       <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
     </div>
@@ -20,7 +19,7 @@
 
     <div class="col-md-4 mt-3">
       <%= f.label :current_password, t('views.device.registrations.current_password'), class: "fw-bold" %>
-      <i>(необходим для подтверждения изменений)</i>
+      <i>(<%= t('needed_for_changes') %>)</i>
       <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control" %>
     </div>
 
@@ -29,10 +28,10 @@
     </div>
   <% end %>
 
-  <h3 class="mt-4">Удалить аккаунт</h3>
+  <h3 class="mt-4"><%= t('views.device.registrations.delete_account') %></h3>
 
   <p><%= button_to t('views.buttons.delete'), registration_path(resource_name),
-                            form: { data: { turbo_confirm: 'Вы уверены? Данные аккаунта будут утрачены безвозвратно!' } },
+                            form: { data: { turbo_confirm: I18n.t('confirm_delete_account') } },
                             method: :delete, class: "btn btn-danger" %></p>
 
   <%= link_to t('views.links.back'), :back %>
