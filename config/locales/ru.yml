@@ -54,6 +54,9 @@ ru:
         title: 'События'
       new:
         title: 'Создание события'
+      pincode:
+        title: 'Доступ только по пин-коду'
+        action: 'Отправить'
     subscriptions:
       calling: 'Зовет:'
       will_go: 'Пойдут:'
@@ -113,6 +116,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+        pincode: 'Пин-код доступа'
       photo:
         photo: 'Фотография'
 
@@ -122,6 +126,7 @@ ru:
       created: 'Вы создали новое мероприятие'
       updated: 'Вы обновили мероприятие'
       destroyed: 'Вы удалили мероприятие :('
+      wrong_pincode: 'Неверный пин-код!'
     users:
       updated: 'Вы обновили свой профиль'
     comments:
