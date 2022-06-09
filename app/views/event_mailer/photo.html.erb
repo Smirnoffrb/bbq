@@ -1,5 +1,5 @@
 <h1><%= t('.title') %></h1>
-<%= image_tag(photo.photo, class: 'img-fluid mb-2', style: "width:150px; height:150px") %>
+<%= image_tag(@photo.photo, class: 'img-fluid mb-2', style: "width:150px; height:150px") %>
 
 <p><%= t('.author') %>: <strong><%= @photo.user.name %></strong></p>
 
