@@ -1,7 +1,7 @@
 <div class="text-center">
   <h1><%= @user.name %></h1>
 
-  <%= image_tag user_avatar(@user), size: '150x150' %>
+  <%= image_tag(user_avatar(@user), class: 'img-icon') %>
 
   <% if @user == current_user  %>
       <p class="mt-4">
