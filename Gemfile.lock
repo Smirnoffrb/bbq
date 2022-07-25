@@ -301,6 +301,7 @@ DEPENDENCIES
   pundit (~> 1.1)
   rails (~> 7.0.3)
   rails-i18n
+  ruby-vips
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
