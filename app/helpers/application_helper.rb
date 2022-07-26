@@ -21,8 +21,10 @@ module ApplicationHelper
   end
 
   def event_photo(event)
-    if event.photos.any?
-      event.photos.last
+    photos = event.photos.persisted
+
+    if photos.any?
+      photos.sample.photo.url
     else
       asset_path('event.jpg')
     end
