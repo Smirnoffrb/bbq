@@ -1,6 +1,6 @@
 <div class="event-photo mt-3">
   <a href="<%= photo.photo.url %>" data-lightbox="set">
-    <%= image_tag(photo.photo.variant(resize_to_fit: [200, 200]).processed, class: 'img-fluid mb-2') %>
+    <%= image_tag(photo.photo.variant(:thumb), class: "me-2") %>
   </a>
 
   <%= t('views.photos.add')%> <%= render partial: 'users/user', object: photo.user %>
