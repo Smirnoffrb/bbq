@@ -4,5 +4,5 @@ import './controllers'
 import * as bootstrap from "bootstrap"
 import "@hotwired/turbo-rails"
 import "./map"
-import "./lightbox"
+import "jquery"
 import "lightbox2"
