@@ -1,8 +1,8 @@
-document.addEventListener('turbo:load', () => {
+document.addEventListener("turbo:load", () => {
     ymaps.ready(init);
 
     function init() {
-        const address = document.getElementById('map').getAttribute('data-address');
+        const address = document.getElementById("map").getAttribute("data-address");
 
         const myMap = new ymaps.Map("map", {
             center: [55.76, 37.64],
@@ -19,14 +19,14 @@ document.addEventListener('turbo:load', () => {
                     new ymaps.Placemark(
                         coordinates,
                         { iconContent: address },
-                        { preset: 'islands#blueStretchyIcon' }
+                        { preset: "islands#blueStretchyIcon" }
                     )
                 );
 
                 myMap.setCenter(coordinates);
                 myMap.setZoom(15);
             }, function (err) {
-                alert('Ошибка при определении местоположения');
+                alert("Ошибка при определении местоположения");
             }
         );
     }
