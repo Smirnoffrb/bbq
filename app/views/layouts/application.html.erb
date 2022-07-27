@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<%= Rails.application.credentials.yandex %>&lang=ru_RU" type="text/javascript"></script>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<%= Rails.application.credentials.yandex %>&lang=ru_RU"
+          type="text/javascript"></script>
 </head>
 
-<body> 
+<body data-turbo="false">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -19,8 +20,7 @@
       <ul class="navbar-nav">
         <% if user_signed_in? %>
           <li class="nav-item"><%= button_to t('app.profile'), current_user, method: :get, class: 'btn btn-light' %></li>
-          <li class="nav-item"><%= button_to t('app.log_off'), destroy_user_session_path, method: :delete,
-                                             class: 'btn btn-light', data: { turbo: false } %></li>
+          <li class="nav-item"><%= button_to t('app.log_off'), destroy_user_session_path, method: :delete, class: 'btn btn-light' %></li>
         <% else %>
           <li class="nav-item"><%= link_to t('app.sign_in'), new_user_session_path, class: 'nav-link' %></li>
           <li class="nav-item"><%= link_to t('app.register'), new_user_registration_path, class: 'nav-link' %></li>
