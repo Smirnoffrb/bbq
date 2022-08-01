@@ -81,6 +81,11 @@ ru:
     photos:
       add: 'Добавил'
     or: 'или'
+  photos:
+    photo:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту фотографию?'
+    delete: 'Удалить фото'
+    uploaded: 'Добавил'
 
     # Перевод моделей
   activerecord:
@@ -136,7 +141,7 @@ ru:
     photos:
       error: 'Что-то не так с фоткой'
       created: 'Вы добавили фотографию к событию'
-      destroyed: 'Вы удалили фотку'
+      destroyed: 'Вы удалили фото'
     subscriptions:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
@@ -160,6 +165,7 @@ ru:
 
   confirm_delete_event: 'Вы уверены, что хотите удалить событие?'
   confirm_delete_account: 'Вы уверены? Данные аккаунта будут утрачены безвозвратно!'
+  confirm_delete_photo: 'Вы уверены, что хотите удалить эту фотографию?'
 
   comments:
     comment:

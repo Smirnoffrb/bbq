@@ -1,7 +1,6 @@
-<div class="event-photo mt-3">
-  <a href="<%= photo.photo.url %>" data-lightbox="set">
-    <%= image_tag(photo.photo.variant(:thumb), class: "me-2") %>
-  </a>
+<div class="event-photo mx-1 my-3">
+  <% image_title = "#{render partial: 'photos/photo_info', locals: { photo: photo }}"%>
 
-  <%= t('views.photos.add')%> <%= render partial: 'users/user', object: photo.user %>
+  <%= link_to image_tag(photo.photo.variant(:thumb)), photo.photo.url,
+              data: { lightbox: 'event-photos', title: image_title } %>
 </div>
