@@ -11,9 +11,9 @@
           type="text/javascript"></script>
 </head>
 
-<body>
+<body data-turbo="false">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" data-turbo="false">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <%= link_to t('app.name'), root_path, class: 'navbar-brand' %>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,7 +32,7 @@
 
 <div class="container">
   <% if flash[:notice].present? %>
-    <div class="alert alert-success alert-dismissible fade show mt-4" role="alert" data-turbo="false">
+    <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
       <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
       <%= flash[:notice] %>
     </div>
