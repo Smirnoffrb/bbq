@@ -16,7 +16,7 @@ gem "dotenv-rails"
 gem "font-awesome-rails"
 gem "rails-i18n"
 gem "rails", "~> 7.0.3"
-gem "ruby-vips"
+#gem "ruby-vips"
 gem "sprockets-rails"
 gem "puma", "~> 5.0"
 gem "pundit", "~> 1.1"
@@ -25,7 +25,6 @@ gem "jsbundling-rails"
 gem "turbo-rails", "~> 1.0"
 gem "stimulus-rails"
 gem "cssbundling-rails"
-gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 group :development, :test do
