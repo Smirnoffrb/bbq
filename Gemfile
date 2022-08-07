@@ -1,3 +1,4 @@
+
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -16,7 +17,7 @@ gem "dotenv-rails"
 gem "font-awesome-rails"
 gem "rails-i18n"
 gem "rails", "~> 7.0.3"
-gem "ruby-vips"
+#gem "ruby-vips"
 gem "sprockets-rails"
 gem "puma", "~> 5.0"
 gem "pundit", "~> 1.1"

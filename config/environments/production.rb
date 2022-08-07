@@ -40,6 +40,8 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :yandex
 
+  config.active_storage.variant_processor = :mini_magick
+
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
   # config.action_cable.url = "wss://example.com/cable"
@@ -91,7 +93,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = {host: 'glacial-forest-92500.herokuapp.com'}
+  config.action_mailer.default_url_options = {host: 'mykebabs.ru'}
 
   config.action_mailer.delivery_method = :mailjet
 end
