@@ -26,7 +26,6 @@ gem "jsbundling-rails"
 gem "turbo-rails", "~> 1.0"
 gem "stimulus-rails"
 gem "cssbundling-rails"
-gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 group :development, :test do
