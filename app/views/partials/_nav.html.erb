@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <%= link_to t("app.name"), root_path, class: "navbar-brand" %>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <% if user_signed_in? %>
+          <li class="ms-3"><%= button_to t('app.profile'), current_user, method: :get, class: "btn btn-outline-secondary" %></li>
+          <li class="ms-3"><%= button_to t('app.log_off'), destroy_user_session_path, method: :delete, class: "btn btn-outline-secondary" %></li>
+        <% else %>
+          <li class="ms-3"><%= link_to t('app.sign_in'), new_user_session_path, class: "btn btn-outline-secondary" %></li>
+          <li class="ms-3"><%= link_to t('app.register'), new_user_registration_path, class: "btn btn-outline-secondary" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
