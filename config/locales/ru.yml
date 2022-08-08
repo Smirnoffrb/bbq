@@ -62,6 +62,10 @@ ru:
       will_go: 'Пойдут:'
       i_will_go: 'Я пойду:'
     device:
+      greeting: 'Добро пожаловать!'
+      confirmation:
+        text_for_user: 'Вы можете подтвердить свой аккаунт перейдя по ссылке ниже:'
+        confirm_account: 'Подтвердить мой аккаунт'
       passwords:
         recover_password: 'Восстановить пароль'
       registrations:
