@@ -10,11 +10,11 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=<%= Rails.application.credentials.yandex %>&lang=ru_RU" type="text/javascript"></script>
 </head>
 
-<body>
+<body data-turbo="false">
 <%= render "partials/nav" %>
 <%= render "partials/flash" %>
 
-<div class="container my-4" data-turbo="false">
+<div class="container my-4">
   <%= yield %>
 
   <footer  class="mt-3">
