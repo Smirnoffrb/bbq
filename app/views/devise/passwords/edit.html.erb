@@ -7,7 +7,7 @@
   <div class="field">
     <%= f.label :password, t('views.device.passwords.new_password') %><br />
     <% if @minimum_password_length %>
-      <em><%= t('views.device.shared.minimum_password_length', count: @minimum_password_length) %></em><br />
+      <em>(<%= t('minimum')%>  <%= @minimum_password_length %> <%= t('characters')%>)</em><br />
     <% end %>
     <%= f.password_field :password, autofocus: true, autocomplete: "new-password", class: 'form-control' %>
   </div>
