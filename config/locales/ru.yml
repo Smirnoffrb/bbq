@@ -62,6 +62,12 @@ ru:
       will_go: 'Пойдут:'
       i_will_go: 'Я пойду:'
     device:
+      shared:
+        minimum_password_length:
+          few: (минимум %{count} знака)
+          many: (минимум %{count} знаков)
+          one: (минимум %{count} знак)
+          other: (минимум %{count} знаков)
       reset_password:
         instruction: 'Вы (или кто-то еще) запросили изменение пароля. Для изменения пароля нажмите ссылку ниже:'
         action: 'Изменить пароль'
@@ -69,6 +75,10 @@ ru:
         instruction_3: 'Ваш пароль не изменится пока вы не нажмете на ссылку и не введете новый.'
       passwords:
         recover_password: 'Восстановить пароль'
+        change_your_password: 'Изменить пароль'
+        new_password: 'Новый пароль'
+        confirm_new_password: 'Повторите новый пароль'
+        change_my_password: 'Изменить пароль'
       registrations:
         new_password: 'Новый пароль'
         password_confirm: 'Подтверждение пароля'
