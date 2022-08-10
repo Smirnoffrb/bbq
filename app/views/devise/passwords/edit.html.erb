@@ -5,15 +5,15 @@
   <%= f.hidden_field :reset_password_token %>
 
   <div class="col-md-4 mt-4">
-    <%= f.label :new_password %>
+    <%= f.label :new_password, t('views.device.sessions.new_password') %>
     <% if @minimum_password_length %>
-      <em>(<%= t('minimum')%>  <%= @minimum_password_length %> <%= t('characters')%>)</em><br />
+      <em>(<%= t('minimum')%>  <%= @minimum_password_length %> <%= t('characters')%>)</em>
     <% end %>
     <%= f.password_field :password, autofocus: true, autocomplete: "new-password", class: 'form-control' %>
   </div>
 
   <div class="col-md-4 mt-4">
-    <%= f.label :password_confirmation, t('views.device.passwords.confirm_new_password') %><br />
+    <%= f.label :password_confirmation, t('views.device.passwords.confirm_new_password') %>
     <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
   </div>
 
