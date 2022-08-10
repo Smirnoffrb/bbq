@@ -5,7 +5,7 @@
   <%= f.hidden_field :reset_password_token %>
 
   <div class="col-md-4 mt-4">
-    <%= f.label :password, t('views.device.passwords.new_password') %><br />
+    <%= f.label :new_password %>
     <% if @minimum_password_length %>
       <em>(<%= t('minimum')%>  <%= @minimum_password_length %> <%= t('characters')%>)</em><br />
     <% end %>

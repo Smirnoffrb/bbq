@@ -86,6 +86,7 @@ ru:
         entry: 'Вход'
         email: 'Адрес почты'
         password: 'Пароль'
+        new_password: 'Новый пароль'
       shared:
         in_your_form: 'В вашей форме'
     photos:
