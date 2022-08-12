@@ -9,9 +9,6 @@ module.exports = {
     gallery: "./app/javascript/gallery.js",
     map: "./app/javascript/map.js"
   },
-  resolve: {
-    extensions: [ '.js', '.jsx'],
-  },
   output: {
     filename: "[name].js",
     sourceMapFilename: "[name].js.map",
