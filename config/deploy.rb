@@ -5,7 +5,7 @@ lock "~> 3.17.1"
 set :application, 'bbq'
 # Это url вашего репозитория, откуда Capistrano
 # будет брать свежие версии исходников
-set :repo_url, 'git@github.com:Smirnoff/bbq.git'
+set :repo_url, 'git@github.com:Smirnoffrb/bbq.git'
 
 # Папка, где будет храниться приложение
 set :deploy_to, '/home/deploy/apps/bbq'
