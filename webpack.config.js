@@ -6,7 +6,6 @@ module.exports = {
   devtool: "source-map",
   entry: {
     application: "./app/javascript/application.js",
-    gallery: "./app/javascript/gallery.js",
     map: "./app/javascript/map.js"
   },
   output: {
