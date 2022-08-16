@@ -34,14 +34,14 @@ group :development, :test do
 end
 
 group :development do
-  gem "web-console"
-end
-
-group :production do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-passenger'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
-  gem 'pg'
+  gem "web-console"
+end
+
+group :production do
+    gem 'pg'
 end
